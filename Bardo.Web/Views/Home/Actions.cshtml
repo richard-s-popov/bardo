@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Акции и предложения!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main">
+    <div class="col-main">
+        <div class="std">
+            <div class="clear"></div>
+        </div>
+        <div class="page-title">
+            <h2 class="subtitle">Акции</h2>
+        </div>
+        <div class="action-contaner" style="padding-top:0;">
+            <div class="action-image">
+                <img src="@Url.Content("~/Content/img/1340979929_se7j4gcbgnq9.jpeg")" />
+            </div>
+            <div class="action-offer right">
+                <h2>Студентам скидка 20%</h2>
+                <span>
+                    Сделай заказ в общежитие<br />
+                    Или предъяви студенческий билет<br />
+                    И получи <b>скидку 20%!</b>
+                </span>
+                <span class="action-attention">*Внимание! Акции не действуют с другими акциями</span>
+            </div>
+        </div>
+        <div class="action-contaner hr-shadow">
+            <div class="action-image left">
+                <img src="@Url.Content("~/Content/img/2569576.png")" style="margin-top: 40px;" />
+            </div>
+            <div class="action-offer right">
+                <h2>Подарки именинникам</h2>
+                <span>
+                    В ваш день рождения<br />
+                    мы делаем Вам <b>скидку 20%!</b><br />
+                    И любой <b>ролл в падорок!</b><br />
+                </span>
+                <span class="action-attention">*Внимание! Акции не действуют с другими акциями</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav-2 a').addClass('active');
+        });
+    </script>
+}

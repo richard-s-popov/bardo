@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Доставка суши Томск">
+    <meta name="keywords" content="Суши, Роллы, Пицца, Азия фуд, Томск, Пироги, Салаты">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <title>@ViewBag.Title</title>
+
+    <link rel="icon" href="@Url.Content("~/Content/img/favicon.ico")" type="image/x-icon">
+    <link rel="shortcut icon" href="@Url.Content("~/Content/img/favicon.ico")" type="image/x-icon">
+
+    <link href="@Url.Content("~/Content/css")" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .cf-hidden {
+            display: none;
+        }
+
+        .cf-invisible {
+            visibility: hidden;
+        }
+    </style>
+    <!--[if lt IE 7]>
+        <script type="text/javascript">
+            //<![CDATA[
+                var BLANK_URL = 'http://livedemo00.template-help.com/magento_37756/js/blank.html';
+                var BLANK_IMG = 'http://livedemo00.template-help.com/magento_37756/js/spacer.gif';
+            //]]>
+        </script>
+        <![endif]-->
+    <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+    </div>
+    <![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/styles.css")" media="all">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/widgets.css")" media="all">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/print.css")" media="print">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="@Url.Content("~/Content/fancybox/lib/jquery.mousewheel-3.0.6.pack.js")"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/fancybox/source/jquery.fancybox.css")" type="text/css" media="screen" />
+    <script type="text/javascript" src="@Url.Content("~/Content/fancybox/source/jquery.fancybox.pack.js")"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/fancybox/source/helpers/jquery.fancybox-buttons.css")" type="text/css" media="screen" />
+    <script type="text/javascript" src="@Url.Content("~/Content/fancybox/source/helpers/jquery.fancybox-buttons.js")"></script>
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/fancybox/source/helpers/jquery.fancybox-thumbs.css")" type="text/css" media="screen" />
+    <script type="text/javascript" src="@Url.Content("~/Content/fancybox/source/helpers/jquery.fancybox-thumbs.js")"></script>
+
+    <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" href="http://livedemo00.template-help.com/magento_37756/skin/frontend/default/theme275/css/styles-ie.css" media="all" />
+        <![endif]-->
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/magento_37756/js/lib/ds-sleight.js"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/magento_37756/skin/frontend/base/default/js/ie6.js"></script>
+    <![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300&amp;subset=cyrillic,latin' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic,latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+<body class="cms-index-index cms-home">
+    <div class="wrapper">
+        <noscript>
+            &lt;div class="noscript"&gt;
+            &lt;div class="noscript-inner"&gt;
+            &lt;p&gt;&lt;strong&gt;JavaScript seem to be disabled in your browser.&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;You must have JavaScript enabled in your browser to utilize the functionality of this website.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        </noscript>
+        <div class="page">
+            <div class="header-container">
+                <div class="header">
+                    <h1 class="logo">
+                        <strong></strong>
+                        <a href="@Url.Action("Index", "Home")" title="Bar-do" class="logo">
+                            <img src="@Url.Content("~/Content/img/bardo_logo.png")" alt="Bar-do" style="width: 200px;">
+                        </a>
+                        <div class="slogan">
+                            Доставка суши в Томске!<br>
+                            А также салаты, азия фуд, пицца<br>
+                            Новое качество, лучшие цены!
+                        </div>
+                    </h1>
+                    <div class="quick-access">
+                        <div class="contact-container">
+                            <div class="phone">(3822) <span>22-26-44</span></div>
+                            <div class="time">в будние 10.00 - 23.00<br>в выходные 10.00 - 24.00</div>
+                            <div class="code">При заказе сообщите<br>оператору промо-код <span>Сентадо</span><br>и получите <b>5% скидку</b>!</div>
+                        </div>
+                    </div>
+                    <br class="clear">
+                    <div class="nav-container">
+                        <ul id="nav">
+                            <li class="level0 nav-1 level-top first">
+                                <a href="@Url.Action("Index", "Home")" class="level-top">
+                                    <span>Хиты продаж</span>
+                                </a>
+                            </li>
+                            <li class="level0 nav-2 level-top">
+                                <a href="@Url.Action("Actions", "Home")" class="level-top">
+                                    <span>Акции!</span>
+                                </a>
+                            </li>
+                            <li class="level0 nav-3 level-top">
+                                <a href="@Url.Action("Sets", "Home")" class="level-top">
+                                    <span>Наборы</span>
+                                </a>
+                            </li>
+                            <!--<li class="level0 nav-3 level-top parent items">
+                                <a href="http://livedemo00.template-help.com/magento_37756/fruits-vegetable.html" class="level-top">
+                                <span>Роллы</span>
+                                </a>
+                                <ul class="level0">
+                                    <li class="level1 nav-3-1 first">
+                                        <a href="http://livedemo00.template-help.com/magento_37756/fruits-vegetable/fruits.html">
+                                        <span>Fruits</span>
+                                        </a>
+                                    </li>
+                                    <li class="level1 nav-3-2">
+                                        <a href="http://livedemo00.template-help.com/magento_37756/fruits-vegetable/live-smart.html">
+                                        <span>Live smart</span>
+                                        </a>
+                                    </li>
+                                    <li class="level1 nav-3-3">
+                                        <a href="http://livedemo00.template-help.com/magento_37756/fruits-vegetable/vegetable.html">
+                                        <span>Vegetables</span>
+                                        </a>
+                                    </li>
+                                    <li class="level1 nav-3-4 last">
+                                        <a href="http://livedemo00.template-help.com/magento_37756/fruits-vegetable/vegetable-blends.html">
+                                        <span>Vegetable blends</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>-->
+                            <li class="level0 nav-4 level-top">
+                                <a href="@Url.Action("Rolls", "Home")" class="level-top">
+                                    <span>Роллы</span>
+                                </a>
+                            </li>
+                            <li class="level0 nav-5 level-top">
+                                <a href="#" class="level-top">
+                                    <span>Салаты</span>
+                                </a>
+                            </li>
+                            <li class="level0 nav-6 level-top">
+                                <a href="#" class="level-top">
+                                    <span>Азия фуд</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function(){
+                            jQuery('#nav ul').each(function(){
+                                jQuery(this).parent().addClass('items');
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="main-container col1-layout">
+                @RenderBody()
+            </div>
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-banners">
+                        <a href="http://bar-do.tomsk.ru/pages.php?page=menu&cat=1" target="_blank"><img src="@Url.Content("~/Content/img/footer_banner_2.jpg")" alt=""></a>
+                        <a href="http://bar-do.tomsk.ru/pages.php?page=menu&cat=1" target="_blank" class="first"><img src="@Url.Content("~/Content/img/footer_banner_1.jpg")" alt=""></a>
+                    </div>
+                    <address>
+                        © @DateTime.Now.Year Доставка от Bar-do. Томск. Сайт находится в разработке. По вопросам обращаться по тел. 22-26-44.
+                    </address>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li class="last"><a href="#">Вакансии</a></li>
+                    </ul>
+                    <ul class="links">
+                        <li class="first"><a href="#" title="Site Map">Карта сайта</a></li>
+                        <li class=" last"><a href="#" title="Contact Us">Контакты</a></li>
+                    </ul>
+                    <div class="right">
+                    </div>
+                    <br class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
